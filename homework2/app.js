@@ -28,9 +28,9 @@ function selectFromInterval(arr, firstNum, lastNum) {
     let resultArr = [];
 
     if (firstNum < lastNum) {
-        resultArr = arr.slice(firstNum, lastNum + 1);
+        resultArr = arr.filter(item => item >= firstNum && item <= lastNum);
     } else {
-        resultArr = arr.slice(lastNum, firstNum + 1);
+        resultArr = arr.filter(item => item >= lastNum && item <= firstNum);
     }
 
     return resultArr;

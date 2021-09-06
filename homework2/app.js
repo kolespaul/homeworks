@@ -31,12 +31,10 @@ function selectFromInterval(arr, firstNum, lastNum) {
         resultArr = arr.slice(firstNum, lastNum + 1);
     } else {
         resultArr = arr.slice(lastNum, firstNum + 1);
-        resultArr = resultArr.reverse();
     }
 
     return resultArr;
 }
-
 
 
 // Task #3
